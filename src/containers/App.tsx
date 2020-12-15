@@ -16,22 +16,22 @@ function App() {
   return (
     <Router history={history}>
       <Container className='App' fluid>
-        <Col>
+        <Col className='header'>
           <Header />
         </Col>
 
-        <Row>
-          <Col sm={2}>
+        <Row className='body'>
+          <Col sm={12} md={3} lg={2} className='navigation'>
             <Navigation />
           </Col>
-          <Col sm={10}>
+          <Col sm={12} md={9} lg={10} className='content-primary'>
             <Content />
           </Col>
         </Row>
 
-        <Col>
+        <Row className='footer'>
           <Footer />
-        </Col>
+        </Row>
       </Container>
     </Router>
   );

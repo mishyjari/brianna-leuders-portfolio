@@ -1,3 +1,156 @@
 div {
-    border: 1px solid black
+    border: 1px solid black;
+    // width: fit-content;
+    // block-size: fit-content;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
+    height: 100vh;
+    width: 95vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.header {
+    // height: 10vh;
+}
+
+.body {
+    height: 90vh;
+
+}
+
+.navigation {
+    background-color: #ddd;
+    padding-top: 2em;
+    border-radius: 1em;
+}
+
+.footer {
+    // height: 5vh;
+}
+
+.content-primary {
+    height: 90vh;
+    overflow-x: hidden;
+    align-self: center;
+    background-color: #ddd;
+    border-radius: 1em;
+
+
+}
+
+.home-content {
+    padding: 1em;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-info-right {
+    overflow: hidden;
+    background-image: url('../assets/bflower.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+
+.info-text-container {
+    background-color: rgba(180, 218, 255, 0.68);
+    text-align: center;
+    border-radius: 4em;
+    height: fit-content;
+    align-self: center;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 2em;
+
+    p {
+        font-size: 1.2em;
+    }
+}
+
+.carousel {
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    .carousel-caption {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        margin: 0;
+        padding: 0;
+        justify-items: center;
+        justify-content: center;
+        left: 0;
+    }
+
+    .carousel-inner,
+    .carousel-slide {
+        height: 85vh
+    }
+
+    a {
+
+        z-index: 999;
+    }
+
+    img {
+        min-width: 100%;
+        max-height: 85vh
+    }
+}
+
+.navigation {
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        text-align: center;
+        list-style: none;
+        margin-top: .5em;
+        padding: .25em;
+        border-radius: .5em;
+        background-color: rgb(0, 34, 121);
+
+        a {
+            color: #ddd;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: none;
+                color: #aaa;
+            }
+        }
+
+        &:hover {
+            cursor: pointer;
+            box-shadow: inset 2px 2px 4px #ddd;
+        }
+
+    }
+}
+
+.img-primary {
+    max-width: 90%;
 }

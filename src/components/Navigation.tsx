@@ -13,7 +13,7 @@ export default function Navigation() {
           <Link to='/visualart'>Visual Art</Link>
         </li>
         <li>
-          <Link to='/modeling'>Modelind</Link>
+          <Link to='/modeling'>Modeling</Link>
         </li>
         <li>
           <Link to='/theater'>Theater</Link>
