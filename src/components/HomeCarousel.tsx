@@ -7,7 +7,7 @@ import theater from '../assets/theater01.jpg';
 
 export default function HomeCarousel() {
   return (
-    <Carousel>
+    <Carousel className='home-carousel'>
       <Carousel.Item>
         <Image src={String(inktober)} alt='Inktober' />
         <Carousel.Caption>
@@ -15,7 +15,7 @@ export default function HomeCarousel() {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <Image src={String(modelling)} alt='Modelln g' />
+        <Image src={String(modelling)} alt='Modelling' />
         <Carousel.Caption>
           <h3>Modelling</h3>
         </Carousel.Caption>

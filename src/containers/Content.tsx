@@ -9,10 +9,11 @@ import Modeling from './Modeling';
 import Services from './Services';
 import Theater from './Theater';
 import VisualArt from './VisualArt';
+import NewUpload from '../components/NewUpload';
 
 export default function Content() {
   return (
-    <Container fluid>
+    <Container fluid className='h-100'>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/blog' component={Blog} />
@@ -21,6 +22,7 @@ export default function Content() {
         <Route path='/theater' component={Theater} />
         <Route path='/services' component={Services} />
         <Route path='/visualart' component={VisualArt} />
+        <Route path='/upload' component={NewUpload} />
       </Switch>
     </Container>
   );

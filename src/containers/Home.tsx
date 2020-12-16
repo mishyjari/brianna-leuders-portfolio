@@ -1,10 +1,7 @@
 import React from 'react';
-import { Image, Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import HomeCarousel from '../components/HomeCarousel';
-
-import bioPortrait from '../assets/bflower.jpg';
-
 export default function Home() {
   return (
     <Container className='home-content' fluid>
